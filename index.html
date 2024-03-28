@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Design Responsivo</title>
+</head>
+<body>
+        <header class="active">
+            <div class="hero-banner">
+                <img class="logo-header" src="./img/Logo do restaurante Footer.png" alt="logo-header">
+                <h1>Onde o sabor da comida caseira encontra a conveniência da marmita!</h1>
+                <p>Participe dessa comunidade também!</p>
+                <a href="#" class="cta-button">Saiba Mais</a>
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slider-item">
+                            <picture>
+                                <img class="img-slider" src="./img/Provider-Background-1.png" alt="slider-1">
+                            </picture>
+                        </div>
+                        <div class="slider-item">
+                            <picture>
+                                <img class="img-slider" src="./img/stew-1759394_1920.jpg" alt="slider-2">
+                            </picture>
+                        </div>
+                        <div class="slider-item">
+                            <picture>
+                                <img class="img-slider" src="./img/pexels-julia-m-cameron-6995259.jpg" alt="slider-3">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <nav>
+                    <img class="logo-header-mobile" src="./img/Logo do restaurante Footer.png" alt="logo-header">
+                    <div class="menu-toggle">
+                        <span id="span-1"></span>
+                        <span id="span-2"></span>
+                        <span id="span-3"></span>
+                    </div>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <main>
+            <div class="container-home">
+                <section class="about">
+                    <div class="about-container">
+                        <picture>
+                            <source srcset="./img/fachada_restaurante-320px.png" media="(max-width: 320px)">
+                            <img class="about-img" src="./img/fachada_restaurante.jpg" alt="">
+                        </picture>
+                        <p>
+                            Desde 2019, temos nos dedicado a oferecer uma experiência gastronômica única em Votorantim e região. Nosso compromisso com o sabor autêntico e os temperos caseiros é o que nos diferencia.
+                            Então, se você está em busca de uma refeição saborosa, saudável e prática, não procure mais! Faça seu pedido hoje mesmo e descubra o que faz da Marmitaria a escolha perfeita para suas refeições do dia a dia.
+                        </p>
+                    </div>
+                </section>
+                <section class="cardapio">
+                    <h2>Cardápio</h2>
+                        <div class="cardapio-container">
+                            <div class="fb-cardapio">
+                                <iframe class="fb-iframe" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmarmitariarodriguesvotorantim%3Flocale%3Dpt_BR&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=6100738170054040" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                            </div>
+                            <div class="cardapio-text">
+                                <p>Nosso cardápio é atualizado diariamente e nossas marmitas são preparadas com ingredientes frescos e selecionados, garantindo uma explosão de sabores a cada refeição.</p>
+                            </div>
+                        </div>
+                </section>
+                <section>
+                    <h2>Conheça os Nossos Serviços</h2>
+                    <ul>
+                        <li>Serviço - 1</li>
+                        <li>Serviço - 2</li>
+                        <li>Serviço - 3</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Entre em Contato</h2>
+                    <form action="">
+                        <input type="text" placeholder="Nome">
+                        <input type="email" placeholder="Email"><br/>
+                        <textarea placeholder="mensagem"></textarea>
+                        <div class="form-button">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </main>
+    <footer class="fixed-footer">
+        <p>&copy; 2023 Meu Site Responsivo. Todos os direitos reservados.</p>
+    </footer>
+    <script src="./js/menu-mobile.js"></script>
+    <script src="./js/slider.js"></script>
+</body>
+</html>

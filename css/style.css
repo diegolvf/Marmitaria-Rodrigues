@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url(https://db.onlinewebfonts.com/c/6fcade7abbedc0b15b45d46f0b8eca84?family=Coquette+W00+Light);
+
+/* ----Reset de estilos---- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----Estilos Gerais----- */
+body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    /* background-color: #f2f2f2; */
+    background-color: rgb(21, 18, 18);
+}
+
+.container-home {
+    /* max-width: 960px; */
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+/* ----Estilos do Cabeçalho---- */
+header {
+    background-color: rgba(132, 23, 32, 0.9);
+    color: #fff;
+    position: relative;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+    font-size: clamp(12px, 0.4rem + 2vw, 25px);
+}
+
+/* ----Estilo Herobanner---- */
+
+.hero-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: calc(100vw * 0.5); /*Ajuste proporcional da altura reduzida*/
+    padding: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.logo-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    filter: drop-shadow(0px 1px 1px #000000);
+    z-index: 2;
+}
+
+.hero-banner h1 {
+    color: #f2f2f2;
+    font-size: 1.4rem;
+    filter: drop-shadow(0px 1px 1px #000000);
+    margin-bottom: 10px;
+    z-index: 2;
+}
+
+.hero-banner p {
+    color: #f2f2f2;
+    font-size: 1rem;
+    filter: drop-shadow(0px 1px 1px #000000);
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+.hero-banner .cta-button:hover {
+    background-color: #555;
+}
+
+.hero-banner .cta-button {
+    background-color: #ffa500;
+    color: #f2f2f2;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto; /* Centraliza o slider na tela */
+    z-index: 0;
+    position: absolute;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.7s ease-in-out;
+}
+
+.slider-item {
+    flex: 0 0 100%; /* Garante que cada item ocupe 100% da largura do slider */
+    position: relative;
+}
+
+.slider-item .img-slider {
+    width: 100%;
+    height: calc(100vw * 0.5); /*Ajuste proporcional da altura reduzida*/
+    object-fit: cover;
+    z-index: 0;
+    /* filter: brightness(0.75) saturate(1.2) contrast(0.85); */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+
+nav .logo-header-mobile {
+    display: none;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: whitesmoke;
+    margin-bottom: 5px;
+    padding: 2px;
+    border-radius: 3px;
+    transition: all ease .2s;
+    filter: drop-shadow(0px 1px 1px #000000);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    z-index: 0;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.4rem;
+    font-family: "Coquette", "Poppins", Arial, Helvetica, sans-serif;
+    filter: drop-shadow(0px 1px 1px #000000);
+}
+nav ul li a:hover {
+    color: #ffa500;
+    font-size: bolder;
+}
+
+nav .active ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+main {
+    padding-bottom: 60px;
+}
+
+/* ----Estilos de todas das as Sections----- */
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffa500;
+    border-radius: 8px;
+    filter: drop-shadow(0px 1px 1px #841720);
+}
+
+section ul li {
+    list-style: none;
+    margin-left: 25px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.about .about-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    align-items: center;   
+}
+
+.about .about-container picture {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.about .about-container picture img {
+    display: flex;
+    justify-content: center;
+    max-width: 70%;
+    border-radius: 8px;
+    filter: drop-shadow(0px 1px 2px #000000);
+}
+
+.about .about-container p {
+    display: flex;
+    max-width: 70%;
+    align-items: center;
+    color: #151212;
+    text-align: justify;
+    padding: 10px;
+    font-size: clamp(8px, 0.4rem + 1vw, 12px);
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.cardapio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(132, 23, 32, 0.9);
+}
+
+.cardapio h2 {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+.cardapio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.fb-cardapio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fb-cardapio .fb-iframe {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+}
+
+.cardapio-text {
+    display: flex;
+    background-color: #ffa500;
+    max-width: 500px;
+    height: 500px;
+    border-radius: 8px;
+}
+
+.cardapio-text p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-size: clamp(8px, 0.4rem + 1vw, 18px);
+    font-weight: bolder;
+    color: whitesmoke;
+    filter: drop-shadow(1px 1px 0px #000000);
+    padding: 25px;
+}
+
+
+/* ----Estilo Form---- */
+
+form {
+    margin-top: 20px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border: 4px;
+}
+
+form .form-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form button[type="submit"] {
+    background-color: #ffa500;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #333;
+}
+
+
+/* ----Estilo Footer---- */
+
+footer {
+    background-color: #800080;
+    color: whitesmoke;
+    padding: 10px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+/* ----Ajustes dos Campos em Telas Maiores---- */
+
+@media screen and (min-width: 768px) {
+    
+    header nav ul li a:hover {
+        color: rgb(244,186,16);
+    }
+    
+    header nav ul li a:hover::before,
+    header nav ul li a:focus::before {
+        width: 80%;
+    }
+    
+    header nav ul li a::before,
+    header ul li a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 1px;
+        bottom: 0;
+        background-color: rgb(244,186,16);
+        transition: width 0.3s ease-out, left 0.3s ease-out;
+    }
+    
+    header nav ul li a::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    header nav ul li a::after {
+        right: 50%;
+        transform: translateX(50%);
+    }
+    
+    
+    form input, form textarea {
+        width: 50%;
+    }
+    
+}
+
+/* ----Estilos Responsivos---- */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+}
+
+/* ----Estilos Responsivos Celucares Grandes---- */
+
+@media screen and (max-width: 767px) {
+    header {
+        padding: 10px;
+    }
+
+    nav.active ul {
+        display: flex; /*exibir a lista de navegação qdo o menu estiver ativo.*/
+        flex-direction: column;
+        background-color: rgb(21, 18, 18);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+
+    nav.active ul li {
+        margin-right: 0;
+    }
+
+    nav.active ul li a {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+        color: rgb(244,186,16);
+        font-size: 1rem;
+    }
+
+    nav a.toggle {
+        display: block;
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+}
+
+}
+
+/* ----Estilos Responsivos Celucares Grandes---- */
+
+@media screen and (max-width: 576px) {
+
+
+    nav {
+        justify-content: space-between;
+    }
+
+    nav .logo-header-mobile {
+        display: flex;
+        width: 120px;
+    }
+
+    .container {
+        max-width: 540px;
+    }
+
+    .hero-banner {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block; /*exibe o menu oculto*/
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .fb-cardapio {
+        height: 300px;
+    }
+
+    .cardapio-text {
+        height: 300px;
+    }
+}
+
+/* ----Estilos Responsivos Celucares pequeno---- */
+
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 320px;
+    }
+
+    .about .about-container picture img {
+        display: flex;
+        justify-content: center;
+        max-width: 95%;
+        border-radius: 8px;
+        filter: drop-shadow(0px 1px 2px #000000);
+    }
+    
+    .about .about-container p {
+        display: flex;
+        max-width: 100%;
+        align-items: center;
+        color: #151212;
+        text-align: justify;
+        padding: 10px;
+        font-size: clamp(8px, 0.4rem + 1vw, 12px);
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+
+}
